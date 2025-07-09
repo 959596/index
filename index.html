@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Home Away</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: transparent;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: yellow;
+      margin-left: 1.5rem;
+      text-decoration: none;
+    }
+
+    .hero {
+      text-align: center;
+      margin: 3rem 0 1rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .tile {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      color: yellow;
+      transition: transform 0.2s, background 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .tile:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
+    }
+
+    .tile i {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tile span {
+      display: block;
+      color: white;
+      font-weight: 500;
+      margin-top: 0.3rem;
+    }
+
+    @media (max-width: 500px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Let's Fucking GOOOOO</div>
+    <nav>
+      <a href="http://kinowns.uk/index.html">Home</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>My Home Away</h1>
+    <p>A place to go for my services.<br>Everyone else, how'd you get here?</p>
+  </div>
+
+  <div class="grid">
+    <a href="https://jellyseer.kinowns.uk/" class="tile" target="_blank"><i class="fa fa-random"></i><span>Jellyseer</span></a>
+    <a href="https://jellfin.kinowns.uk" class="tile" target="_blank"><i class="fas fa-tv"></i><span>Jellyfin</span></a>
+    <a href="https://immich.kinowns.uk" class="tile" target="_blank"><i class="fas fa-cloud"></i><span>Immich</span></a>	
+    <a href="https://nginx.kinowns.uk" class="tile" target="_blank"><i class="fas fa-server"></i><span>Nginx Proxy Manager</span></a>
+	<a href="https://portainer.kinowns.uk/" class="tile" target="_blank"><i class="fas fa-fire"></i><span>Portainer</span></a>
+    <a href="https://prowlarr.kinowns.uk/" class="tile" target="_blank"><i class="fas fa-headphones"></i><span>Prowlarr</span></a>
+    <a href="https://radarr.kinowns.uk/" class="tile" target="_blank"><i class="fas fa-film"></i><span>Radarr</span></a>	
+    <a href="https://sonarr.kinowns.uk/" class="tile" target="_blank"><i class="fas fa-tv"></i><span>Sonarr</span></a>	
+    <a href="https://qbit.kinowns.uk/" class="tile" target="_blank"><i class="fas fa-database"></i><span>qBittorrent</span></a>	
+
+  </div>
+</body>
+</html>
